@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+/*HEADER*/
+.header{
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    width: 68px;
+}
+.header__menu-link{
+
+}
+/*BIENVENIDA*/
+.welcome{
+
+}
+.welcome__content{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 750px) {
+    .welcome__content {
+      flex-direction: row; /* Cambiar a fila */
+      justify-content: space-around; /* Distribuir los elementos horizontalmente */
+    }
+}
+.welcome__tittle{
+
+}
+.welcome__foto{
+    width: 200px;
+
+}
+/*SOBRE MI*/
+.about-me{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (min-width: 750px) {
+    .about-me {
+      justify-content: space-between; /* Distribuir los elementos horizontalmente */
+      display: flex;
+      align-items: flex-start;
+    }
+    /* Coloca la imagen a la izquierda */
+  .img-about__me {
+    order: -1; /* Mueve la imagen al primer lugar en la fila */
+    width: 100px;
+  }
+
+  /* Coloca el título y el texto en una columna a la derecha */
+  .about-me__tittle, .about-me__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+}
+
+.img-about__me{
+    width: 100px;
+}
+.about-me__tittle{
+    color: white !important;
+
+}
+.about-me__text{
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: 700px;
+    color: white !important;
+
+
+
+}
+/*SERVICIOS*/
+.services{
+    
+}
+.services__tittle{
+    display: flex !important;
+    justify-content: center !important;
+}
+.services__content{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 750px) {
+    .services__content {
+      flex-direction: row; /* Cambiar a fila */
+      justify-content: space-around; /* Distribuir los elementos horizontalmente */
+    }
+}
+.services__item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+.services__img{
+    width: 200px;
+
+}
+.services__item-title{
+
+}
+.services__item-text{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+}
+/*FORMULARIO*/
+.contenedor{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.form{
+    display: flex;
+    color: white;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    max-width: 450px; /*Para que no se agrande mas que esto*/
+}
+.form__tittle{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+.label{
+    display: block;
+    font-size: 24px;
+}
+
+.input-text,
+ textarea{
+    font-family: "Roboto";
+    background-color: #c4c4c4;
+    border: none;
+    font-size: 24px;
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.textarea{
+    min-height:200px;
+}
+
+.button{
+    font-family: "Roboto";
+    font-weight: 7000px;
+    width: 100%;
+    font-size: 20px;
+    background-color: #FFD953;
+    border: none;
+    border-radius: 4px;
+    min-width: 306.45px;
+    padding:13px 0 ;
+    margin-top: 10px;
+}
+
+/*FOOTER*/
+.footer{
+
+}
+.footer__logo{
+
+}
+.footer__social-link{
+
+}
